@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Фильмы | Movie Library</title>
-  <link rel="stylesheet" href="/style.css" />
-  <script type="module" src="/movies.js"></script>
-</head>
-<body>
-<nav>
-  <a href="/">Погода</a>
-  <a href="/movies.html">Фильмы</a>
-  <a href="/currency.html">Валюты</a>
-</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фильмы | Movie Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="movies.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Погода</a>
+      <a href="movies.html">Фильмы</a>
+      <a href="advices.html">Советы</a>
+    </nav>
 
-<main>
-  <h1>Библиотека фильмов</h1>
-  <p class="description">
-    Найдите информацию о фильмах по названию, используя открытый API OMDb.
-  </p>
+    <main>
+      <h1>Библиотека фильмов</h1>
+      <p class="description">
+        Найдите информацию о фильмах по названию (указывайте название на
+        английском языке), используя открытый API OMDb.
+      </p>
 
-  <div class="container">
-    <form id="movieForm">
-      <input type="text" id="movieSearch" placeholder="Введите название фильма" />
-      <button type="button" id="searchMovie">Искать</button>
-    </form>
+      <div class="container">
+        <form id="movieForm">
+          <input
+            type="text"
+            id="movieSearch"
+            placeholder="Введите название фильма"
+          />
+          <button type="button" id="searchMovie">Искать</button>
+        </form>
 
-    <div id="moviesList"></div>
-  </div>
-</main>
-</body>
+        <div id="moviesList"></div>
+      </div>
+    </main>
+  </body>
 </html>
