@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Идеи для досуга</title>
+    <script type="module" crossorigin src="/web_hw_2/assets/currency-NpApaLPG.js"></script>
+    <link rel="modulepreload" crossorigin href="/web_hw_2/assets/style-Cvjpl_yh.js">
+    <link rel="stylesheet" crossorigin href="/web_hw_2/assets/style-ikXzKliD.css">
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Погода</a>
+      <a href="movies.html">Фильмы</a>
+      <a href="advices.html">Советы</a>
+    </nav>
+
+    <main>
+      <h1>Полезные советы на сегодня</h1>
+      <p class="description">
+        Укажите, сколько советов хотите получить, и нажмите кнопку. Каждый совет
+        подбирается случайным образом.
+      </p>
+
+      <div class="container">
+        <form id="advicesForm">
+          <select id="advicesCount" aria-label="Количество советов">
+            <option value="1">1 совет</option>
+            <option value="2">2 совета</option>
+            <option value="3">3 совета</option>
+            <option value="4">4 совета</option>
+            <option value="5">5 советов</option>
+          </select>
+          <button type="submit" id="getAdvices">Получить советы</button>
+        </form>
+
+        <div id="advicesResult" class="result-box"></div>
+      </div>
+    </main>
+  </body>
+</html>
