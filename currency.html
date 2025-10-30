@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/currency.js"></script>
+</head>
+<body>
+<nav>
+    <a href="/">Погода</a>
+    <a href="/movies.html">Фильмы</a>
+    <a href="/currency.html">Валюты</a>
+</nav>
+
+<main>
+    <h1>Конвертер валют</h1>
+    <p class="description">
+        Переведите одну валюту в другую по актуальному курсу. Данные обновляются ежедневно.
+    </p>
+
+    <div class="container">
+        <form id="currencyForm">
+            <input type="number" id="amount" placeholder="Сумма" />
+            <select id="from">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="RUB">RUB</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <span>→</span>
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <button type="button" id="convert">Конвертировать</button>
+        </form>
+
+        <div id="result" class="result-box"></div>
+    </div>
+</main>
+</body>
+</html>
